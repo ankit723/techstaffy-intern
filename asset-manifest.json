@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/techstaffy-intern%20/static/css/main.8f01a1a7.css",
+    "main.js": "/techstaffy-intern%20/static/js/main.8ebf0d09.js",
+    "static/js/787.8edc20e7.chunk.js": "/techstaffy-intern%20/static/js/787.8edc20e7.chunk.js",
+    "static/media/arrow_down.svg": "/techstaffy-intern%20/static/media/arrow_down.d3aad89dbbb225c8d8b1207f4ddae2fc.svg",
+    "index.html": "/techstaffy-intern%20/index.html",
+    "main.8f01a1a7.css.map": "/techstaffy-intern%20/static/css/main.8f01a1a7.css.map",
+    "main.8ebf0d09.js.map": "/techstaffy-intern%20/static/js/main.8ebf0d09.js.map",
+    "787.8edc20e7.chunk.js.map": "/techstaffy-intern%20/static/js/787.8edc20e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f01a1a7.css",
+    "static/js/main.8ebf0d09.js"
+  ]
+}
