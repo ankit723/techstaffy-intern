@@ -1,7 +1,6 @@
 import "./App.css"
 import arrow from"./bg/arrow_down.svg"
 import React from "react";
-import { useState } from 'react';
 
 
 function scrollFunction() {
@@ -66,7 +65,7 @@ function App() {
           <p id="main_para">
               We Believe any work that is taken should be done with Passion and By love. The Services provided by us are one of the top notch with the latest Industry standards Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <h2 className="listofservice">Services that we Offer</h2>
+          <h2 className="listofservice">Services That We Offer</h2>
           <ul id="services_ul">
             <li>
               <a href="/"><h3>Service Name 1</h3> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, non saepe pariatur illo libero quae unde neque necessitatibus praesentium voluptatem ex sint officia eius dignissimos quod, blanditiis adipisci modi aperiam? </p> </a>
@@ -82,7 +81,7 @@ function App() {
           </ul>
         </div>
 
-        <div className="contact">
+        <div className="contact" id="contact">
           <h1>Want Us To Get Back To You</h1>
           <span>Just Enter your Contact Details and We'll Shortly Contact You</span>
           <form>
