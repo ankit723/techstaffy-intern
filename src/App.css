@@ -1,38 +1,258 @@
-.App {
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+h1{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #730101a7;
+  text-underline-offset: 10px;
+}
+h3{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #7f8201a7;
+  text-underline-offset: 10px;
+  font-size: 1.3rem;
+}
+
+.sidenav{
+  background-color: #840000b8;
+  height: 25rem;
+  width: 7rem;
+  margin-left: -10rem;
+  margin-top: 4rem;
+  padding-top: 10rem;
+  position: fixed;
+  border-radius: 355px;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  width: 100%; 
+}
+
+li a {
+  display: block; 
+  color: rgb(255, 255, 255); 
+  text-align: center; 
+  padding: 14px 16px; 
+  text-decoration: none; 
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+li a:hover {
+  font-size: 1.5rem; 
+}
+
+.techstaffy{
+  margin-top: -10rem; 
+  margin-left: 29vw;
+  font-size: 3rem;
+}
+
+
+.main_container{
+  margin-top: 15rem;
+  margin-left: 15em;
+}
+
+#main_Heading{
+  margin-top: 7rem;
+}
+
+#main_para{
+  font-size: 1.5rem;
+  margin-right: 45rem;
+}
+
+.worker_image img{
+  margin-left: 35vw;
+  margin-top: 10rem;
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.worker_image img{
+  animation: updown 2s infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: rotate(90deg) translatex(0);
+  }
+  50% {
+    transform: rotate(90deg) translatex(-15px);
+  }
+  100% {
+    transform: rotate(90deg) translatex(0);
+  }
+}
+
+#about_us{
+  padding-top: 5rem;
+  margin-left: 33vw;
+}
+
+#about_us p{
+  margin-right: 9rem;
+  margin-left: -37rem;
+}
+
+#services{
+  padding-top: 5rem;
+  margin-top: 20rem;
+  margin-left: 33vw;
+}
+
+#services p{
+  margin-right: 9rem;
+  margin-left: -37rem;
+}
+
+.listofservice{
+  margin-left: -37rem;
+}
+
+#services_ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -37rem;
+  overflow: hidden;
+}
+
+#services_ul li {
+  width: 100%; 
+}
+
+#services_ul li a {
+  display: block; 
+  color: rgb(0, 0, 0); 
+  text-align: center; 
+  padding: 14px 16px; 
+  text-decoration: none; 
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+#services_ul li a h3{
+  margin-left: -83.5rem;
+}
+
+#services_ul li a p{
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.contact{
+  margin-top: 15rem;
   text-align: center;
+  margin-left: -10rem;
+  margin-bottom: 10rem;
+}
+.contact span{
+  font-size: 1.2rem;
+}
+form {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+.field-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.form-message {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.form-message.success {
+  background-color: #4CAF50;
+}
+
+.form-message.error {
+  background-color: #f44336;
 }
