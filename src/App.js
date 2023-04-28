@@ -72,7 +72,7 @@ function App()
 
         <div className="worker_image">
           <a href="#about_us">
-            <img src={arrow} />
+            <img src={arrow} alt="serve_down"/>
           </a>
         </div>
 
