@@ -1,6 +1,6 @@
 import "./App.css";
 import arrow from "./bg/arrow_down.svg";
-import React from "react";
+import React, { useEffect, useState} from "react";
 
 function scrollFunction() {
   if (
@@ -14,7 +14,6 @@ function scrollFunction() {
 }
 const mediaQuery = window.matchMedia('(min-width: 768px)');
 
-
 if (mediaQuery.matches) {
   // Add event listener for scroll event
   window.addEventListener("scroll", scrollFunction);
@@ -27,7 +26,12 @@ if (mediaQuery.matches) {
 }
 
 
-function App() {
+function App() 
+
+{
+  useEffect(() => {
+  document.title = "Techstaffy IT Solution";
+    }, []);
   return (
     <>
       <div className="sidenav">
