@@ -12,10 +12,20 @@ function scrollFunction() {
     document.getElementsByClassName("sidenav")[0].style.marginLeft = "-10rem";
   }
 }
-window.addEventListener("scroll", scrollFunction);
-window.onscroll = function () {
+const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+
+if (mediaQuery.matches) {
+  // Add event listener for scroll event
+  window.addEventListener("scroll", scrollFunction);
+  window.onscroll = function () {
   scrollFunction();
-};
+  };
+} else {
+  // Remove event listener for scroll event
+  window.removeEventListener('scroll', scrollFunction);
+}
+
 
 function App() {
   return (

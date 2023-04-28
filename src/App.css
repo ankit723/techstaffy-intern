@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  font-size: 1rem;
 }
 body{
   margin: 0;
@@ -158,12 +159,11 @@ h3{
   padding: 14px 16px; 
   text-decoration: none; 
   font-size: 1.2rem;
-  transition: 0.3s;
   border-radius: 2rem;
 }
 
 #services_ul li a:hover {
-  background-color:#84000085;
+  background-color:#8e8c0083;
 }
 
 #services_ul li a h3{
@@ -412,4 +412,135 @@ form {
 p {
   font-size: 0.9rem;
   margin: 0;
+}
+
+
+
+/* Adjustments for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  
+  html{
+    font-size: 2rem;
+  }
+  .sidenav {
+    margin-left: 0;
+    margin-top: 2rem;
+    padding-top: 4rem;
+    height: auto;
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  .techstaffy {
+    margin-top: 0;
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+  
+  .main_container {
+    margin-top: 8rem;
+    margin-left: 2rem;
+  }
+  
+  #main_para {
+    margin-right: 0;
+  }
+  
+  .worker_image img {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  
+  #about_us {
+    margin-left: 2rem;
+  }
+  
+  #about_us p {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  #services {
+    margin-left: 2rem;
+  }
+  
+  #services p {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .listofservice {
+    margin-left: 0;
+  }
+  
+  #services_ul li a h3 {
+    margin-left: 0;
+  }
+  
+  .contact {
+    margin-left: 0;
+    margin-top: 8rem;
+  }
+}
+
+/* Adjustments for screens smaller than 576px */
+@media screen and (max-width: 576px) {
+  .worker_image img {
+    height: 3rem;
+    width: 3rem;
+  }
+  
+  .contact {
+    padding-top: 3rem;
+  }
+}
+/* adjust layout for screens smaller than 768px */
+@media (max-width: 767px) {
+  /* reduce the width of the services section and center it */
+  .services {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* adjust the font size and line height of the services items */
+  .services li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  /* move the side navigation below the header */
+  .sidenav {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    margin-top: 24px;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* remove the float from the side navigation links */
+  .sidenav a {
+    float: none;
+  }
+}
+
+/* CSS for tablet devices */
+/* CSS for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .sidenav {
+    width: 250px;
+  }
+  .main {
+    margin-left: 250px;
+  }
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .service {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
 }
